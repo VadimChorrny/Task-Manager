@@ -11,7 +11,7 @@
             <RowDefinition Height="97*"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-        <DataGrid Name="grid" AutoGenerateColumns="False" IsReadOnly="True" >
+        <DataGrid Name="grid" AutoGenerateColumns="False" IsReadOnly="False" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="PID" Binding="{Binding Id}" />
                 <DataGridTextColumn Header="Total Processor Time" Binding="{Binding TotalProcessorTime}" />

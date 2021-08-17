@@ -57,7 +57,11 @@ namespace WpfApp1
 
         private void btnKill_Click(object sender, RoutedEventArgs e)
         {
-
+            var processKill = Process.GetProcesses().Where(p => p.ProcessName == grid.SelectedItem);
+            foreach (var item in processKill)
+            {
+                item.Kill();
+            }
         }
 
         private void btnNewProcess_Click(object sender, RoutedEventArgs e)
